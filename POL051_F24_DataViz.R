@@ -4,6 +4,8 @@
 # POL 051 F24 
 # TA Haley Daarstad
 
+# Special thanks to Jack Rametta for some of the code
+
 # Libraries --------------------------------------------------------------------
 
 # Remember to load our libraries
@@ -40,7 +42,7 @@ df = gapminder #notice these are the same! I prefer <-, but = works just the sam
 ## Data Viz --------------------------------------------------------------------
 
 
-## Scatter Plots
+## Scatter Plots ---------------------------------------------------------------
 
 head(df)
 
@@ -76,22 +78,22 @@ ggplot(df, aes(x = gdpPercap, y = lifeExp)) +
   # Makes seperate graphs based on a varaible in this case continent
   facet_wrap(~ continent, nrow = 2)
 
-## Line Graphs
+## Line Graphs --------------------------------------------------------------------
 
 head(early_january_weather)
+
 # Lets check what these variables mean!
 ?early_january_weather
 
-ggplot(data = early_january_weather, 
-       mapping = aes(x = time_hour, y = temp)) +
+ggplot(data = early_january_weather, aes(x = time_hour, y = temp)) +
   geom_line()
 
 
-## Histograms
+## Histograms --------------------------------------------------------------------
 
 # How do we add labels??
 
-ggplot(data = weather, mapping = aes(x = temp)) +
+ggplot(data = weather, aes(x = temp)) +
   geom_histogram() +
   labs(
     # Lets add a label for the bottom (x axis)
@@ -102,30 +104,32 @@ ggplot(data = weather, mapping = aes(x = temp)) +
     title = "Hourly temperature in Newark for January 1-15, 2013"
   )
 
-## Box plots
+## Box plots --------------------------------------------------------------------
 
 ggplot(data = weather, mapping = aes(x = factor(month), y = temp)) +
   geom_boxplot()
 
 
-## Bar Plots
+## Bar Plots --------------------------------------------------------------------
 
 ## DO NOT TOUCH JUST RUN ##
 fruits <- tibble(
-  fruit = c("apple", "apple", "orange", "apple", "orange")
+  fruit = c("apple", "apple", "peach", "orange", "apple", "orange", "peach")
 )
 fruits_counted <- tibble(
-  fruit = c("apple", "orange"),
-  number = c(3, 2)
+  fruit = c("apple", "orange", "peach"),
+  number = c(3, 2, 4)
 )
 
-ggplot(data = fruits, mapping = aes(x = fruit)) +
+ggplot(data = fruits, aes(x = fruit)) +
   geom_bar()
 
-ggplot(data = fruits, mapping = aes(x = fruit, fill = fruit)) +
+ggplot(data = fruits, aes(x = fruit, fill = fruit)) +
   geom_bar() +
+# add a theme
   theme_clean() +
-  scale_fill_manual(values=wes_palette(n=2, name="GrandBudapest1"))
+# add some fun colors
+  scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest1"))
 
 
 #### YOUR TURN ####
