@@ -1,8 +1,9 @@
-# 2024 Fall POL 51 - WK 4 Relationships
-# TA Haley Daarstad
-# Professor Juan Tellez 
 
-# Thank you to Jack Rameta for providing the foundation for the code #
+# Basics of Data Relationships
+# POL 051 F24 
+# TA Haley Daarstad
+
+# Special thanks to Jack Rametta for some of the code
 
 # Load packages ----------------------------------------------------------------
 
