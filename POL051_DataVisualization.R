@@ -1,5 +1,3 @@
-## Week 2 ## 
-
 # Basics of Data Visualization
 # POL 051 F24 
 # TA Haley Daarstad
