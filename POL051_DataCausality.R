@@ -1,6 +1,5 @@
-# 2024 Fall POL 51 - WK 7 Causality
+# POL 51 - Causality
 # TA Haley Daarstad
-# Professor Juan Tellez 
 
 # Load packages ----------------------------------------------------------------
 library(tidyverse)
