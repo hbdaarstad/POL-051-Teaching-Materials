@@ -1,4 +1,4 @@
-# POL 51 - Causality
+# Basics of Data Generation and Causality 
 # TA Haley Daarstad
 
 # Load packages ----------------------------------------------------------------
