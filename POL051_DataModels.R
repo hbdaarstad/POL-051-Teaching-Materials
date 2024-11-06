@@ -1,5 +1,6 @@
-# 2024 Fall POL 51 - WK 5 Modeling
+# The Basics of Correlation and Modeling (Linear Regression)
 # TA Haley Daarstad
+
 # credit for this code goes to Jack Rametta!! 
 
 # Load packages ----------------------------------------------------------------
